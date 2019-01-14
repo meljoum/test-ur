@@ -1,0 +1,44 @@
+.companies-footer {
+    background-color: #2b2d44;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    padding: 0 8px;
+}
+.navbar-logo {
+    display: flex;
+    align-items: center;
+}
+:local(.logo) {
+    width: 150px;
+    height: 50px;
+    display: block;
+}
+:local(.logo img) {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+a.link-profil {
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+a.link-profil::after {
+    content: "›";
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 400;
+    margin-left: 5px;
+}
+a.link-profil:hover {
+    color: #6050dc;
+    transition: 0.25s color;
+}
+a.link-profil:hover::after {
+    color: #6050dc;
+    transition: 0.25s color;
+}
